@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Maps API Marker</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+      
+  <form id="coordinates" action="#" method="get">
+    <div>
+      <label for="latitude">Latitude:</label><br>
+      <input type="text" id="latitude" name="latitude" maxlength="10" required autofocus />
+    </div>
+    <div>
+      <label for="longitude">Longitude:</label><br>
+      <input type="text" id="longitude" name="longitude" maxlength="10" required />
+    </div>
+    <div>
+      <label for="message">Message:</label><br>
+      <input type="text" id="message" name="message" maxlength="40" required />
+    </div>
+        
+    <div class="button cf">
+        <input type="submit" name="submit" value="Add marker">
+    </div>
+  </form>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+  </body>
+</html>
