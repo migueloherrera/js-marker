@@ -69,3 +69,66 @@ table {
   clear: both;
   *zoom: 1;
 }
+
+/* START HERE */
+
+html, body {
+  font-family: arial, sans-serif;
+  height: 100%;
+}
+
+header {
+  background: #CCCCCC;
+}
+
+header div {
+  width: 150px;
+  float: left;
+}
+
+header label, header input {
+  display: block;
+  float: left;
+  color: #4F2412;
+}
+
+header label {
+  font-size: 18px;
+  padding: 7px 0 7px 15px;;
+  width: 120px;
+}
+
+header input {
+  height: 35px;
+  width: 120px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.message {
+  width: 270px;
+}
+
+#message {
+  width: 250px;
+}
+
+.button {
+  margin: 17px;
+}
+
+.button input {
+  height: 50px;
+  width: 150px;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+#map {
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
+}

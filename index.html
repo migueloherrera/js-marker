@@ -7,27 +7,35 @@
   </head>
   <body>
       
-  <form id="coordinates" action="#" method="get">
-    <div>
-      <label for="latitude">Latitude:</label><br>
-      <input type="text" id="latitude" name="latitude" maxlength="10" required autofocus />
-    </div>
-    <div>
-      <label for="longitude">Longitude:</label><br>
-      <input type="text" id="longitude" name="longitude" maxlength="10" required />
-    </div>
-    <div>
-      <label for="message">Message:</label><br>
-      <input type="text" id="message" name="message" maxlength="40" required />
-    </div>
-        
-    <div class="button cf">
-        <input type="submit" name="submit" value="Add marker">
-    </div>
-  </form>
+    <header class="cf">
+      <form id="coordinates" action="" method="post">
+        <div>
+          <label for="latitude">Latitude:</label><br>
+          <input type="text" id="latitude" name="latitude" maxlength="12" required autofocus />
+        </div>
+        <div>
+          <label for="longitude">Longitude:</label><br>
+          <input type="text" id="longitude" name="longitude" maxlength="12" required />
+        </div>
+        <div class="message">
+          <label for="message">Message:</label><br>
+          <input type="text" id="message" name="message" maxlength="40" required />
+        </div>
+            
+        <div class="button">
+          <input type="submit" name="submit" value="Add marker" />
+        </div>
+      </form>
+      
+    </header>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    <div id="map"></div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?v=3">
+    </script>
     <script type="text/javascript" src="js/javascript.js"></script>
   </body>
 </html>
